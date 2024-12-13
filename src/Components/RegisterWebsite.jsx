@@ -34,7 +34,7 @@ export default function RegisterWebsite() {
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        fetch("http://localhost:3000/user/create",{
+        fetch("https://trafficlens-backend.vercel.app/user/create",{
             method:'POST',
             headers:{
                 "Content-Type": "application/json",

@@ -37,7 +37,7 @@ export default function Analysis() {
     }
     else{
 
-      fetch(`http://localhost:3000/user/analysis/${data.websiteName}`)
+      fetch(`https://trafficlens-backend.vercel.app/user/analysis/${data.websiteName}`)
       .then((res)=>(res.json()))
       .then((data)=>{
       if(data.error){
